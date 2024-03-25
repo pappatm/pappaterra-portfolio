@@ -1,18 +1,39 @@
-    /* -- BACKGROUND --*/
+/*-- BACKGROUND --*/
 
 body {
     background-color: hsl(318, 100%, 98%);
-}
+    }
 
-    /* -- HEADER --*/
+/*-- HEADER --*/
 
 nav {
     background-color: hsl(280, 100%, 92%);
     display: flex; 
-    justify-content: space-between;
-    padding: 30px 10%; 
-}
+    align-items: center; 
+    justify-content: center;
+    }
 
+#main-menu {
+    display: flex;
+    gap: 50px;
+    align-items: center; 
+    justify-content: center;
+    padding: 30px 10%;
+    }
+
+#main-menu li {
+    list-style: none;
+    }
+    /* gets rid of the bullet points */
+
+#main-menu button {
+    background-color: transparent;
+    font-family: "mali"; 
+    font-size: 30px;
+    border-width: 0px;
+    }
+
+/*
 #main-menu .about-me {
     background-color: transparent;
     font-family: "Mali"; 
@@ -21,19 +42,28 @@ nav {
     border-width: 0;
     font-weight: bold;
     text-decoration: none;
-}
+    }
 
-    /* -- ABOUT ME --*/
+#main-menu button {
+    background-color: rgb(121, 168, 210);
+    font-family: "Nunito"; 
+    font-size: 18px;
+    border-width: 0px;
+    }
+*/ 
+
+
+/*-- ABOUT ME --*/
 
 h1 {
     font-family: "nerko one";
     font-size: 70px;
-    line-height: 25%;
+    line-height: 20%;
     display: flex;
     justify-content: flex-end;
     padding: 5px 5%; 
     flex: 1; 
-}
+    }
 
 h2{
     font-family: "mali";
@@ -43,14 +73,14 @@ h2{
     justify-content: flex-end;
     padding: 5px 15%;
     flex: 1;
-}
+    }
 
 #self-portrait{
     padding: 5px 5%; 
     flex: 2;
     position: relative;
     bottom: 150px; 
-}
+    }
 
 p{
     font-family: "mali";
@@ -59,8 +89,9 @@ p{
     display: flex; 
     justify-content: flex-end;
     padding: 5%;
-}
-    /* -- FOOTER --*/
+    }
+
+/*-- FOOTER --*/
 
 #footer {
     background-color: hsl(280, 100%, 92%);
@@ -68,6 +99,7 @@ p{
     justify-content: center;
     align-content: center;
     padding: 20px 10%; 
-}
+    }
 
-    /* --  --*/
+/*--  --*/
+/*  */
