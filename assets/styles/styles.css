@@ -26,6 +26,19 @@ nav {
     }
     /* gets rid of the bullet points */
 
+#main-menu .dropdown {
+    background-color: rgb(197, 219, 238);
+    font-family: "Mali";
+    font-size: 20px;
+    margin: 0px;
+    padding: 5px;
+    display: none;
+    }
+
+#main-menu .mediums:hover .dropdown {
+    display: block;
+    }
+
 #main-menu button {
     background-color: transparent;
     font-family: "mali"; 
@@ -78,8 +91,7 @@ h1 {
     line-height: 20%;
     display: flex;
     justify-content: flex-end;
-    padding: 5px 5%; 
-    flex: 1; 
+    padding: 5px 8%;
     }
 
 h2{
@@ -88,24 +100,24 @@ h2{
     line-height: 10%;
     display: flex; 
     justify-content: flex-end;
-    padding: 5px 15%;
-    flex: 1;
+    padding: 5px 20%;
     }
 
 #self-portrait{
     padding: 5px 5%; 
-    flex: 2;
     position: relative;
     bottom: 150px; 
     }
 
-p{
+.biography {
     font-family: "mali";
     font-size: 25px; 
-    line-height: 10%;
+    line-height: auto;
     display: flex; 
-    justify-content: flex-end;
+    flex-wrap: wrap;
     padding: 5%;
+    position: relative; 
+    bottom: 160px;
     }
 
 /*-- FOOTER --*/
@@ -118,5 +130,30 @@ p{
     padding: 20px 10%; 
     }
 
+/*-- DRAWING --*/
+
+#drawing {
+    justify-content: center;
+    }
+
+/*-- PAINTINGS --*/
+#paintings {
+    justify-content: center;
+    }
+
+
+/*-- PROCESS PHOTOS --*/
+
+#process-photos {
+    justify-content: center;
+    }
+
+/*-- CONTACT ME --*/
+
+#information {
+    justify-content: center;
+    }
+
 /*--  --*/
-/*  */
+
+/*--  --*/
