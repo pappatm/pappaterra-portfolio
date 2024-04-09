@@ -6,7 +6,7 @@
 <!-- VIEWPORT -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- STYLES -->
-        <link rel="stylesheet" href="assets/styles/styles.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
 <!-- FONT FOR MALI -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,25 +41,25 @@
         <nav>
             <menu id="main-menu">
                 <li class="about-me">
-                    <button>About Me</button>
+                    <button><a class="about" href="index.html">About Me</a></button>
                 </li>
                 <li class="mediums">
-                    <button>Mediums</button>
+                    <button class="med">Mediums</button>
                         <svg width="20px" height="20px" viewBox="0 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z" fill="#000000"/>
                             </svg>
-                     <menu class="dropdown">
-                       <li><a href="pages/drawing/index.html">Drawings</a></li>
-                       <li><a href="">Paintings</a></li>
-                       <li><a href="">Print Making</a></li>
-                       <li><a href="">Animation</a></li>
-                   </menu>
+                    <div class="dropdown">
+                       <a class="draw" href="pages/drawing/index.html">Drawings</a>
+                       <a class="paint" href="pages/paintings/index.html">Paintings</a>
+                       <a class="print" href="pages/print-making/index.html">Print Making</a>
+                       <a class="anim" href="pages/animation/index.html">Animations</a>
+                     </div>
                 </li>
                 <li class="process-photos">
-                    <button><a href="pages/process-photos/index.html">Process Photos</a></button>
+                    <button><a class="proc" href="pages/process-photos/index.html">Process Photos</a></button>
                 </li>
                 <li class="contact-me">
-                    <button><a href="pages/contact-me/index.html">Contact Me</a></button>
+                    <button><a class="cont" href="pages/contact-me/index.html">Contact Me</a></button>
                 </li>
            </menu>     
         </nav>
@@ -67,16 +67,26 @@
         <section id="layout">
             <h1>Marielle Pappaterra</h1>
             <h2>2002</h2>
-            <img id="self-portrait" src="assets/imgs/photo.png" width="500px" alt="Self Portrait">
-            <p class="biography">While I decided to major in Sociology at The College of New Jersey (TCNJ), I also minored in Fine Arts because I always had an affinity for the arts. 
-                As a child, I took classes in drawing, pottery, painting, and sculpture. I love how it became an outlet for me to expand my creative thinking and explore new ways to express different emotions. 
-                I was able to enhance my techniques and try new materials while studying at TCNJ. </p>
+            <img id="self-portrait" src="assets/imgs/photo.png" width="550px" alt="Self Portrait">
+            <p class="biography" >While I decided to major in Sociology at The College of New Jersey (TCNJ), I also minored in Fine Arts because I always had an affinity for the arts. As a child, 
+                I took classes in drawing, pottery, painting, and sculpture. I love how it became an outlet for me to expand my creative thinking and explore new ways to express different emotions. 
+                I was able to enhance my techniques and try new materials while studying at TCNJ.</p>
+            <p class="bio2">
+                In my drawing classes, I used various forms of lead, charcoal, and ink. I improved my perspective drawing and finetuned how I developed concepts. In my painting classes, I was 
+                introduced to oil paints - I experimented with different application methods and how the medium interacts with other materials (like acrylic, denim, and glass).
+            </p>
+
         </section>
 
 <!-- FOOTER -->
         <section id="footer">
-            <button><img src="assets/imgs/linkedin.icon.png" width="25px" alt="LinkedIn-icon"></button>
-            <button><img src="assets/imgs/twitter.icon.png" width="25px" ald="twitter-icon"></button>
+            <a href="https://www.instagram.com/marielles.arts/">
+                <img class="instagram-icon" src="assets/imgs/instagram-icon.svg" width="50px" alt="Instagram-Icon (click on the icon to take you to that page)" on>
+            </a>
+                <div class= "divider"></div>
+            <a href="https://www.linkedin.com/in/mpappaterra/">
+                <img class="linkedin-icon" src="assets/imgs/linkedin-icon.svg" width="45px" alt="LinkedIn-icon (click on the icon to take you to that page)">
+            </a>
         </section>
     </body>
 </html>
