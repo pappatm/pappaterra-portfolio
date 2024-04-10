@@ -10,9 +10,8 @@ nav {
     background-color: hsl(280, 100%, 92%);
     display:inline-flexbox; 
     height: 111px;
+    justify-content: space-evenly;
     align-items: center; 
-    justify-content: center;
-    margin: auto;
     }
 
 #main-menu {
@@ -35,6 +34,11 @@ nav {
     list-style: none;
     }
     /* gets rid of the bullet points */
+
+.about-me {
+    margin-right: 200px;
+    }
+
 
 #main-menu .about-me a {
     color: black;
@@ -97,8 +101,8 @@ nav {
     color: black;
     text-decoration: none;
     font-family: "mali";
-    line-height: 12px;
-    text-align: center;
+    line-height: 20px;
+    text-align: left;
     padding: 15px; 
     display: block;
     }
@@ -169,9 +173,9 @@ h2{
 #self-portrait{
     float: left;
     padding: 0px 5%; 
-    margin-top: 30px;
+    margin-top: 25px;
     margin-left: 25px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     }
 
 .biography {
@@ -235,6 +239,30 @@ h2{
     justify-content: center;
     }
 
+/*-- NOT RIGHT --
+.painting-grid {
+    display: grid;
+    align-items: center;
+    padding:0px 5%;
+    gap: 50px 50px;
+    }
+
+.grid-paint {
+    align-items: center;
+    padding: 0px 5%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    }
+--*/
+
+.paint-desc {
+    font-family: "mali";
+    font-size: 16px;
+    margin-left: 10px;
+    }
+
 /*-- PRINT MAKING --*/
 
 #printing {
@@ -257,24 +285,28 @@ h2{
     justify-content: center;
     }
 
+/*-- NOT RIGHT --
 .animation-grid {
     display: grid;
     align-items: center;
     padding:0px 5%;
-    gap: 60px 40px;
+    gap: 50px 50px;
     }
 
 .grid-animate {
     align-items: center;
-    padding: 0px 10%;
+    padding: 0px 5%;
+    grid-column-start: 1;
+    grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
     }
+--*/
 
 .animate-desc {
     font-family: "mali";
     font-size: 16px;
-    text-indent: 15px;
+    margin-left: 10px;
     }
 
 /*-- PROCESS PHOTOS --*/
@@ -290,13 +322,39 @@ h2{
 
 /*-- CONTACT ME --*/
 
-#information {
+#contact {
+    padding: 0px 5%;
+    }
+
+.information {
     font-family: "nerko one";
     font-size: 80px;
     line-height: 100%;
     margin-top: 80px;
     margin-bottom: 60px;
     justify-content: center;
+    }
+
+.info {
+    font-family: "mali";
+    font-size: 30px;
+    margin-left: 35px;
+    display: flex;
+    justify-content: flex-start;
+    }
+
+.email {
+    font-family: "mali";
+    color: black;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-left: 8px;
+    text-decoration: none;
+    }
+
+.email:hover {
+    color: blue;
+    text-decoration: underline;
     }
 
 /*--  --*/
