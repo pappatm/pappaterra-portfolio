@@ -239,28 +239,20 @@ h2{
     justify-content: center;
     }
 
-/*-- NOT RIGHT --
 .painting-grid {
     display: grid;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: auto;
+    padding: 0px 9%;
+    gap: 60px 60px;
     align-items: center;
-    padding:0px 5%;
-    gap: 50px 50px;
     }
-
-.grid-paint {
-    align-items: center;
-    padding: 0px 5%;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    }
---*/
 
 .paint-desc {
     font-family: "mali";
     font-size: 16px;
-    margin-left: 10px;
+    margin-left: 25px;
+    margin-right: 125px;
     }
 
 /*-- PRINT MAKING --*/
@@ -283,6 +275,15 @@ h2{
     margin-top: 80px;
     margin-bottom: 60px;
     justify-content: center;
+    }
+
+.animation-grid {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: auto;
+    padding: 0px 10%;
+    gap: 60px 60px;
+    align-items: center;
     }
 
 /*-- NOT RIGHT --
