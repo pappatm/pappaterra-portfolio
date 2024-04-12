@@ -275,6 +275,14 @@ h2{
     margin-bottom: 5px;
     }
 
+.print-project2 {
+    font-family: "mali";
+    font-size: 30px;
+    margin-left: 50px;
+    margin-right: 60px;
+    margin-bottom: 5px;
+}
+
 .print-project-desc1 {
     font-family: "mali";
     font-size: 20px;
@@ -283,14 +291,6 @@ h2{
     margin-right: 60px;
     margin-bottom: 60px;
     }
-
-.print-project2 {
-    font-family: "mali";
-    font-size: 30px;
-    margin-left: 50px;
-    margin-right: 60px;
-    margin-bottom: 5px;
-}
 
 .print-project-desc2 {
     font-family: "mali";
