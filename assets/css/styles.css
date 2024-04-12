@@ -267,6 +267,67 @@ h2{
     justify-content: center;
     }
 
+.print-project1 {
+    font-family: "mali";
+    font-size: 30px;
+    margin-left: 50px;
+    margin-right: 60px;
+    margin-bottom: 5px;
+    }
+
+.print-project-desc1 {
+    font-family: "mali";
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 80px;
+    margin-right: 60px;
+    margin-bottom: 60px;
+    }
+
+.print-project2 {
+    font-family: "mali";
+    font-size: 30px;
+    margin-left: 50px;
+    margin-right: 60px;
+    margin-bottom: 5px;
+}
+
+.print-project-desc2 {
+    font-family: "mali";
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 80px;
+    margin-right: 60px;
+    margin-bottom: 60px;
+    }
+
+.print1-grid {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: auto;
+    padding: 2px 10%;
+    gap: 60px 110px;
+    margin-bottom: 60px;
+    align-items: center;
+    }
+
+.print2-grid {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: auto;
+    padding: 2px 10%;
+    gap: 60px 110px;
+    margin-bottom: 60px;
+    align-items: center;
+    }
+
+.print-desc {
+    font-family: "mali";
+    font-size: 16px;
+    margin-left: 25px;
+    margin-right: 125px;
+    }
+
 /*-- ANIMATIONS --*/
 
 #animations {
@@ -283,6 +344,7 @@ h2{
     grid-template-columns: 500px 500px;
     grid-template-rows: auto;
     padding: 0px 10%;
+    margin-top: 60px;
     gap: 60px 60px;
     align-items: center;
     }
