@@ -4,12 +4,35 @@ body {
     background-color: hsl(318, 100%, 98%);
     }
 
+/*-- BUTTON: Menu Icon --*/
+
+#mobile-menu-button {
+    display: none;
+    }
+
+@media (max-width: 580px) {
+    #mobile-menu-button {
+        display: block;
+        }
+    .display-none-mobile {
+        display: none;
+        }
+    #menu {
+        flex-direction: column;
+        width: 100%;
+        }
+    .dropdown-menu {
+        display: block;
+        position: relative;
+        }
+    }
+
 /*-- HEADER --*/
 
 nav {
     background-color: hsl(280, 100%, 92%);
     display:inline-flexbox; 
-    height: 111px;
+    height: 110px;
     justify-content: space-evenly;
     align-items: center; 
     }
@@ -17,9 +40,9 @@ nav {
 #main-menu {
     display: flex;
     gap: 50px;
-    align-items: flex-start; 
     justify-content: center;
-    padding: 30px 10%;
+    align-self: center; 
+    padding: 10px 0%;
     }
 
 #main-menu button {
@@ -32,13 +55,15 @@ nav {
 
 #main-menu li {
     list-style: none;
+    padding: 5px 0%;
+    display:flexbox;
     }
     /* gets rid of the bullet points */
 
 .about-me {
-    margin-right: 200px;
+    margin-top: 15px;
+    position:sticky;
     }
-
 
 #main-menu .about-me a {
     color: black;
@@ -46,103 +71,98 @@ nav {
 }
 
 #main-menu .about:hover {
+    transition: .5s;
     color: hsl(280, 34%, 53%);
     font-weight: bolder;
     }
 
-#main-menu .dropdown {
-    background-color: rgb(197, 219, 238);
-    font-family: "Mali";
-    font-size: 20px;
-    margin: 0px;
-    padding: 5px;
-    display: none;
-    position: relative;
+#menu {
+    display: grid; 
+    grid-template-columns: 300px 300px;
+    grid-template-rows: auto;
+    margin-left: 250px;
     }
 
-#main-menu .med:hover {
+.med {
+    margin-left: 120px;
+}
+
+.med:hover {
+    transition: .5s;
     text-decoration-line: underline;
     text-decoration-thickness: 2px;
     }
 
-#main-menu .mediums:hover .dropdown {
+.mediums:hover .dropdown {
+    transition: .5s;
     display: block;
     }
 
-/*
-#main-menu .about-me {
-    background-color: transparent;
-    font-family: "Mali"; 
-    font-size: 35px;
-    color: white;
-    border-width: 0;
-    font-weight: bold;
-    text-decoration: none;
-    }
-
-#main-menu button {
-    background-color: rgb(121, 168, 210);
-    font-family: "Nunito"; 
-    font-size: 18px;
-    border-width: 0px;
-    }
-*/ 
-
-#main-menu .dropdown {
+.dropdown {
     background-color: hsl(280, 100%, 92%);
     border-radius: 15%;
     font-family: "mali";
-    margin: 0px;
-    padding: 20px;
+    font-size: 18px;
+    margin-top: 5px 0px;
+    margin-left: 100px;
+    padding: 5px 2%;
     display: none;
     }
 
-#main-menu .dropdown a {
+.dropdown a {
     color: black;
     text-decoration: none;
     font-family: "mali";
-    line-height: 20px;
+    line-height: 18px;
     text-align: left;
+    margin-left: 15px;
     padding: 15px; 
     display: block;
     }
 
-#main-menu .draw:hover {
+.draw:hover {
+    transition: .5s;
     color: hsl(280, 34%, 46%);
     font-weight: bolder;
     }
 
-#main-menu .paint:hover {
+.paint:hover {
+    transition: .5s;
     color: hsl(280, 34%, 46%);
     font-weight: bolder;
     }
 
-#main-menu .print:hover {
+.print:hover {
+    transition: .5s;
     color: hsl(280, 34%, 46%);
     font-weight: bolder;
     }
 
-#main-menu .anim:hover {
+.anim:hover {
+    transition: .5s;
     color: hsl(280, 34%, 46%);
     font-weight: bolder;
     }
 
-#main-menu .process-photos a {
+.process-photos a {
     color: black;
     text-decoration: none;
     } 
 
-#main-menu .proc:hover {
+.proc:hover {
+    transition: .5s;
     color: hsl(280, 34%, 46%);
     font-weight: bolder;
     }
 
-#main-menu .contact-me a {
+.contact-me a {
     color: black;
     text-decoration: none;
+    margin-left: 100px;
     }
 
-#main-menu .cont:hover {
+.cont:hover {
+    transition: .5s;
     color: hsl(280, 34%, 46%);
     font-weight: bolder;
     }
@@ -153,7 +173,7 @@ h1 {
     font-family: "nerko one";
     font-size: 80px;
     line-height: 100%;
-    margin-top: 80px;
+    margin-top: 125px;
     margin-bottom: 0px;
     display: flex;
     justify-content: center;
@@ -173,7 +193,7 @@ h2{
 #self-portrait{
     float: left;
     padding: 0px 5%; 
-    margin-top: 25px;
+    margin-top: 125px;
     margin-left: 25px;
     margin-bottom: 15px;
     }
@@ -217,16 +237,16 @@ h2{
     width: 100px;
     }
 
-/*-- DRAWING PAGE --*/
-
-#drawing {
-    font-family: "nerko one";
-    font-size: 80px;
-    line-height: 100%;
-    margin-top: 80px;
-    margin-bottom: 60px;
-    justify-content: center;
-    }
+/*-- DRAWING PAGE 
+    #drawing {
+        font-family: "nerko one";
+        font-size: 80px;
+        line-height: 100%;
+        margin-top: 80px;
+        margin-bottom: 60px;
+        justify-content: center;
+        }
+--*/
 
 /*-- PAINTINGS --*/
 
@@ -234,7 +254,7 @@ h2{
     font-family: "nerko one";
     font-size: 80px;
     line-height: 100%;
-    margin-top: 80px;
+    margin-top: 125px;
     margin-bottom: 60px;
     justify-content: center;
     }
@@ -262,7 +282,7 @@ h2{
     font-family: "nerko one";
     font-size: 80px;
     line-height: 100%;
-    margin-top: 80px;
+    margin-top: 125px;
     margin-bottom: 60px;
     justify-content: center;
     }
@@ -334,7 +354,7 @@ h2{
     font-family: "nerko one";
     font-size: 80px;
     line-height: 100%;
-    margin-top: 80px;
+    margin-top: 125px;
     margin-bottom: 60px;
     justify-content: center;
     }
@@ -349,39 +369,10 @@ h2{
     align-items: center;
     }
 
-/*-- NOT RIGHT --
-.animation-grid {
-    display: grid;
-    align-items: center;
-    padding:0px 5%;
-    gap: 50px 50px;
-    }
-
-.grid-animate {
-    align-items: center;
-    padding: 0px 5%;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    }
---*/
-
 .animate-desc {
     font-family: "mali";
     font-size: 16px;
     margin-left: 10px;
-    }
-
-/*-- PROCESS PHOTOS --*/
-
-#process-photos {
-    font-family: "nerko one";
-    font-size: 80px;
-    line-height: 100%;
-    margin-top: 80px;
-    margin-bottom: 60px;
-    justify-content: center;
     }
 
 /*-- CONTACT ME --*/
@@ -394,7 +385,7 @@ h2{
     font-family: "nerko one";
     font-size: 80px;
     line-height: 100%;
-    margin-top: 80px;
+    margin-top: 125px;
     margin-bottom: 60px;
     justify-content: center;
     }
