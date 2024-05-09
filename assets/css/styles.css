@@ -13,9 +13,10 @@ body {
 @media (max-width: 1220px) {
     #mobile-menu-button {
         display: block;
+        cursor: pointer;
         }
     .display-none-mobile {
-        display: flex;
+        display: none;
         }
     #menu {
         flex-direction: column;
@@ -25,6 +26,10 @@ body {
         display: block;
         position: relative;
         }
+    header nav ul.open{
+        height: auto;
+    }
+
     }
 
 #mobile-menu-icon {
@@ -60,10 +65,11 @@ nav {
     }
     /* gets rid of the grey default buttons */
 
-#main-menu li {
+li {
     list-style: none;
+    justify-content: space-around;
+    align-items: center;
     padding: 5px 0%;
-    display:flexbox;
     }
     /* gets rid of the bullet points */
 
@@ -186,7 +192,7 @@ h1 {
     font-family: "nerko one";
     font-size: 70px;
     line-height: 100%;
-    margin-top: 125px;
+    margin-top: 80px;
     margin-bottom: 0px;
     display: flex;
     justify-content: center;
@@ -269,7 +275,7 @@ h2{
     font-family: "nerko one";
     font-size: 70px;
     line-height: 100%;
-    margin-top: 125px;
+    margin-top: 80px;
     margin-bottom: 60px;
     justify-content: center;
     }
@@ -296,7 +302,7 @@ h2{
     font-family: "nerko one";
     font-size: 70px;
     line-height: 100%;
-    margin-top: 125px;
+    margin-top: 80px;
     margin-bottom: 60px;
     justify-content: center;
     }
@@ -395,7 +401,7 @@ h2{
     font-family: "nerko one";
     font-size: 70px;
     line-height: 100%;
-    margin-top: 125px;
+    margin-top: 80px;
     margin-bottom: 60px;
     justify-content: center;
     }
@@ -429,7 +435,7 @@ h2{
     font-family: "nerko one";
     font-size: 70px;
     line-height: 100%;
-    margin-top: 125px;
+    margin-top: 80px;
     margin-bottom: 60px;
     justify-content: center;
     }
