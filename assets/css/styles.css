@@ -45,7 +45,7 @@ body {
 
 nav {
     background-color: hsl(280, 100%, 92%);
-    display:inline-flexbox; 
+    /*-- display:inline-flexbox; --*/
     height: 115px;
     align-items: center;
     }
