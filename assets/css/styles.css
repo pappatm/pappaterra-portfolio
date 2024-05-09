@@ -54,7 +54,7 @@ nav {
     display: flex;
     gap: 50px;
     align-self: center; 
-    padding: 15px 5%;
+    padding: 15px 10%;
     }
 
 #main-menu button {
@@ -94,6 +94,13 @@ li {
     }
 
 #menu {
+        /*-- Removing Makes JS Work --
+        REMOVE
+    display: grid; 
+    margin-left: 250px;
+        ADD
+    margin-left: 60px;
+    --*/
     display: grid; 
     grid-template-columns: 300px 300px;
     grid-template-rows: auto;
